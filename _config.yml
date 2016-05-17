@@ -57,7 +57,7 @@ delete-delay: 5000
 lines: # You can add HTML Tags in the Text
   - text: "写好程序是一种本事"
   - text: "打好桌游是一种本事"
-  - text: "玩好游戏是一种本事"
+  - text: "玩好Minecraft是一种本事"
   - text: "光吃不胖是一种本事"
 me-img: "/img/barcode.jpg"
 
@@ -101,7 +101,7 @@ pinterest-share: True
 pocket-share: True
 vkontakte-share: True
 
-disqus-shortname: "panossakkos"
+disqus-shortname: "huangenyan"
 
 syntax-highlight: True
 
