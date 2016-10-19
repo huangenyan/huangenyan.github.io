@@ -1,7 +1,7 @@
 ---
 layout: post
 section-type: post
-title: Title
+title: 梳理一些C++里比较难记的语法特性
 category: Programming
 tags: [ 'c++', 'programming' ]
 ---
