@@ -57,6 +57,7 @@ int main() {
 ### 利用编译器防止意外未重写
 
 可以在函数声明里加入`override`来声明这个函数是要重写父类函数的，如果它没有重写某个函数的话，编译器就会报错：
+
 ```C++
 struct B {
   virtual void f() const {cout << "B::f ";}
