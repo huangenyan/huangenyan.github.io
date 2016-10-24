@@ -82,3 +82,14 @@ class Circle : public Shape {public: /* ... */}; // OK
 struct Circle : Shape {/* ... */}; // Completely equivalent to previous one
 class Circle : Shape {public: /* ... */}; // probably a mistake: all methods in Shape cannot be called in Circle
 ```
+
+## Copy Constructors and Copy Assignment
+
+关于这个话题，最主要的一点是要清楚在什么时候会调用什么东西，因为调用的形式和声明的形式往往很不一样：
+
+```C++
+SomeType a;
+SomeType b = a; // This will call the copy constructor of SomeType
+SomeType c;
+c = a // This will call the copy assignment of SomeType
+```
