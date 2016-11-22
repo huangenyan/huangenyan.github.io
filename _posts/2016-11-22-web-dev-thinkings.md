@@ -9,13 +9,13 @@ tags: [ 'web', 'programming' ]
 前几天写完了毕业论文，交给老板等着修改意见。趁着这几天没什么事情又爬进了Web开发的坑，看了好多“Get Started”和“Tutorial”， 研究了最“bleeding edge”的开发工具和框架，试着自己写了几个小网站感受这些工具的力量，收获了一些思考在此分享。
 
 先列举一下涉及到的东西吧：
-  - Gulp
-  - Webpack
-  - React
-  - Redux
-  - Pug
-  - Stylus
-  - Babel
+  * Gulp
+  * Webpack
+  * React
+  * Redux
+  * Pug
+  * Stylus
+  * Babel
 
 ## 如果可以选择，我们应该使用那些工具和框架？
 
