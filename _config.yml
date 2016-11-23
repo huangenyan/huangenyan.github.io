@@ -1,190 +1,43 @@
+name: Your New Jekyll Site
+description: Blogging about stuffs
+meta_description: "Your New Jekyll Site, Blogging about stuffs"
 
-# Site settings
+aboutPage: true
 
-# NB! Set your site's url, otherwise stuff will break :)
+markdown: kramdown
+highlighter: rouge
 
-url: "https://huangenyan.github.io"
+gems: [jekyll-paginate]
+paginate: 20
+baseurl: /
+domain_name: 'https://huangenyan.github.io'
+google_analytics: 'UA-77867720-1'
+disqus: true
+disqus_shortname: 'huangenyan'
 
-# If you're hosting your site at a Project repository on GitHub pages
-# (https://yourusername.github.io/repository-name)
-# and NOT your user repository (https://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-#
-# NB! Without this *nothing* will work, because it's used in every path :)
+# Details for the RSS feed generator
+url:            'https://huangenyan.github.io/feed'
+author:         'Enyan Huang'
+authorTwitter:  'huangenyan'
 
-baseurl: ""
+permalink:       /:year/:title/
 
-# Google tracking id to track your visitors
-
-google-tracking-id: "UA-77867720-1"
-
-# Forces https everywhere in your website, except when you serve it locally
-# If you are not hosted on Github Pages, and your host doesn't support https
-# then you should disable it
-
-force-https: True
-
-#############
-# HTML Head #
-#############
-
-lang: "zh"
-author: "黄恩岩"
-title: "大黄的技术博客"
-description: "“技术”这个词很广泛的，对吧_(:з」∠)_"
-keywords: "黄恩岩, Node.js, iOS, 桌游, board game"
-favicon: "/img/favicon.ico"
-
-################
-# Header layout #
-################
-
-black-favicon: "/img/favicon.ico"
-
-background-img: "../img/intro-bg.jpg"
-
-##############################
-# Dynamic Text on the Header #
-##############################
-
-dynamic-typing: True
-shuffle: True # Shuffle the lines.
-loop: True
-loop-count: False # Set False for infinite loop, or set any number for finite loop.
-type-speed: 10
-start-delay: 200
-delete-delay: 5000
-lines: # You can add HTML Tags in the Text
-  - text: "写好程序是一种本事"
-  - text: "打好桌游是一种本事"
-  - text: "玩好Minecraft是一种本事"
-  - text: "光吃不胖是一种本事"
-me-img: "/img/barcode.jpg"
-
-##############################
-# Color the browser elements #
-##############################
-color-browser: "#000000"
-apple-status-bar-style: "black"
-
-################
-# Web app mode #
-################
-
-web-app-mode: True
-
-# Icons for Web App mode
-
-icon-36p: "/img/web-app/icon-36p.png"
-icon-48p: "/img/web-app/icon-48p.png"
-icon-72p: "/img/web-app/icon-72p.png"
-icon-96p: "/img/web-app/icon-96p.png"
-icon-144p: "/img/web-app/icon-144p.png"
-icon-192p: "/img/web-app/icon-192p.png"
-
-########
-# Blog #
-########
-
-post-preview-words: 20
-
-paginate: 5
-
-email-share: True
-fb-share: True
-twitter-share: True
-linkedin-share: True
-reddit-share: True
-google-plus-share: True
-tumblr-share: True
-pinterest-share: True
-pocket-share: True
-vkontakte-share: True
-
-disqus-shortname: "huangenyan"
-
-syntax-highlight: True
-
-############
-# Timeline #
-############
-
-events:
-  - image: "/img/timeline/hk.jpg"
-    date: "September 2010"
-    description: "来到香港"
-  - image: "/img/timeline/birth.png"
-    date: "June 1991"
-    description: "你好世界"
-
-# First image of the Timeline
-
-timeline-img: "/img/timeline/default.png"
-
-###########
-# Contact #
-###########
-
-email: "huangenyan@gmail.com"
-
-################
-# Author Blurb #
-################
-
-# The author blurb goes underneath blog posts.
-# This works best when your author blurb image has a transparent background, or matches your site background color.
-
-# if the author_blurb is not set, then this feature is skipped
-author_blurb: "黄恩岩现在是一个在香港理工大学的研究僧，将来会是一只萌萌的程序猿。"
-author_blurb_image: "/img/author.png"
-
-##################
-# Social Buttons #
-##################
-
-social:
-  - title: "facebook"
-    url: "https://www.facebook.com/enyan.huang"
-  - title: "twitter"
-    url: "https://twitter.com/huangenyan"
-  - title: "github"
-    url: "https://github.com/huangenyan"
-  - title: "weibo"
-    url: "http://www.weibo.com/1673965165/"
-  - title: "rss"
-    url: "/feed.xml"
-
-############
-# 404 page #
-############
-
-404-img: "/img/sgs-zhugeliang.jpg"
-
-################################################################################
-
-# NB! Tread carefully if you want to change the variables below this point!
-
-# Sections shown in the index page
-
-pages_list:
-  关于我: 'about'
-  博客: 'latest-post'
-  时间线: 'timeline'
-  联系方式: 'contact'
-
-# Exclusion list from the generated _site
-
-exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
-
-# Pagination path
-
-paginate_path: "blog/page:num/"
-
-# Enable minification SASS
-
-sass:
-  style: compressed
-
-gems:
-  - jekyll-paginate
-  - jemoji
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post

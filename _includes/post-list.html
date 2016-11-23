@@ -1,19 +1,12 @@
+<ul id="post-list">
+    {% for post in paginator.posts %}
+        <li>
+            <a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}"><aside class="dates">{{ post.date | date:"%b %d" }}</aside></a>
+            <a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}">{{ post.title }} <h2>{{ post.description }}</h2></a>
+        </li>
+    {% endfor %}
+</ul>
 
-<!-- Post List Start -->
-
-<h4 align="left">
-  <strong>{{ post.date | date_to_string }}</strong>
-  <small>.
-    <a class="category" href="{{site.baseurl}}/categories/{{ post.category | downcase }}.html">
-      {{ post.category }}
-    </a>
-  .</small>
-  <br class="visible-xs-block">
-  <a href="{{site.baseurl}}{{post.url}}">
-    <strong>{{ post.title }}</strong>
-  </a>
-  <br class="visible-xs-block">
-  <small><a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a></small>
-</h4>
-
-<!-- Post List End -->
+{% if paginator.previous_page or paginator.next_page %}
+    {% include pagination.html %}
+{% endif %}
