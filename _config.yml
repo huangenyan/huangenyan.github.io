@@ -1,6 +1,6 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+name: 大黄的技术博客
+description: 编程与游戏
+meta_description: "Enyan Huang's blog"
 
 aboutPage: true
 
@@ -16,7 +16,7 @@ disqus: true
 disqus_shortname: 'huangenyan'
 
 # Details for the RSS feed generator
-url:            'https://huangenyan.github.io/feed'
+url:            'https://huangenyan.github.io/subscribe'
 author:         'Enyan Huang'
 authorTwitter:  'huangenyan'
 
