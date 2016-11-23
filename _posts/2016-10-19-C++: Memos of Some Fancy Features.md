@@ -1,6 +1,9 @@
 ---
 layout: post
+section-type: post
 title: 梳理一些C++里比较难记的语法特性
+category: Programming
+tags: [ 'c++', 'programming' ]
 ---
 
 最近在重新学习C++，有一些特性之前就看到过很多遍但总是记不住。我想大概光靠看书能吸收的知识还是太有限了，所以在这里把一些特性重新梳理一遍。

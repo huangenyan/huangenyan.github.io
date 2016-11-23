@@ -1,6 +1,9 @@
 ---
 layout: post
+section-type: post
 title: 关于Web开发的一些思考：工具，配置，最佳实践
+category: Programming
+tags: [ 'web', 'programming' ]
 ---
 
 前几天写完了毕业论文，交给老板等着修改意见。趁着这几天没什么事情又爬进了Web开发的坑，看了好多“Get Started”和“Tutorial”， 研究了最“bleeding edge”的开发工具和框架，试着自己写了几个小网站感受这些工具的力量，收获了一些思考在此分享。
