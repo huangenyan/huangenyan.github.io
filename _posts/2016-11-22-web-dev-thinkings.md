@@ -1,6 +1,5 @@
 ---
 layout: post
-section-type: post
 title: 关于Web开发的一些思考：工具，配置，最佳实践
 category: Programming
 tags: [ 'web', 'programming' ]

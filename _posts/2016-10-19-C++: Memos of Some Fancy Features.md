@@ -1,6 +1,5 @@
 ---
 layout: post
-section-type: post
 title: 梳理一些C++里比较难记的语法特性
 category: Programming
 tags: [ 'c++', 'programming' ]
@@ -12,7 +11,7 @@ tags: [ 'c++', 'programming' ]
 
 在override这个事情上，C++和大部分其他语言不同。子类和父类拥有同名函数的时候，并不会默认子类重写父类的函数。只有当父类的函数声明为virtual时，重写才会发生。而当父类的函数没有声明为virtual时，拥有父类类型的子类会调用父类的方法。（详见下面的例子）
 
-{% highlight c++ %}
+```C++
 struct B {
   virtual void f() const {cout << "B::f ";}
   void g() const {cout << "B::g ";}
@@ -51,7 +50,7 @@ int main() {
   dd.f(); // DD::f
   dd.g(); // DD::g
 }
-{% endhighlight %}
+```
 注意`call(dd)`这一句，输出的结果是`D::f`而不是`DD::f`。
 
 ### 利用编译器防止意外未重写

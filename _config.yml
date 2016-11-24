@@ -1,25 +1,50 @@
-# Site settings
+# Basic
 title: 大黄的技术博客
-header-img: img/home-bg.jpg
-email: huangenyan@gmail.com
-copyright_name: Enyan Huang
-description: "编程与游戏的技术"
-baseurl: ""
-url: "http://localhost:4000"
-twitter_username: huangenyan
-github_username:  huangenyan
-facebook_username:  enyan.huang
-email_username:  huangenyan@gmail.com
+subtitle: 编程与游戏
+welcome_message: 如果有的选，那就选做自己喜欢的事情。
+description: 我是黄恩岩，现在是一名香港理工大学电子计算学系的研究生，立志成为一名优秀的开发者。
+creator: <a href="https://github.com/huangenyan">黄恩岩</a>
 
-# Google Analytics
-# To enable google analytics, uncomment below line with a valid Google Tracking ID
-google_tracking_id: "UA-77867720-1"
+url: "https://huangenyan.github.io"
 
-# Build settings
+permalink: /:year/:month/:title/
+
+# Format
 markdown: kramdown
 highlighter: rouge
-permalink: pretty
-paginate: 5
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-gems: [jekyll-paginate, jekyll-feed]
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: slate
+
+# The blog button should not be removed.
+blog_button:
+    title: 博客
+    description: 查看所有文章
+
+# Navigation buttons in the front page.
+nav:
+    - {title: 项目, description: 查看我的开源项目, url: 'https://github.com/huangenyan?tab=repositories'}
+    # - {title: Another Button, description: A button, url: 'http://example.com'}
+
+# Pagination
+gems: [jekyll-paginate]
+paginate: 10
+paginate_path: "page/:num/"
+
+# Comment
+comment:
+    disqus: huangenyan
+    # duoshuo:
+
+# Social
+social:
+    weibo: 1673965165
+    github: huangenyan
+    twitter: huangenyan
+    gplus: 106794116801750969302
+    mail: huangenyan@gmail.com
+
+# Google Analytics
+ga:
+    id: UA-77867720-1
+    host: huangenyan.github.io
