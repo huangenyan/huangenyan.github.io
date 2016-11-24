@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 关于Web开发的一些思考：工具，配置，最佳实践
-category: Programming
+category: Web开发
 tags: [ 'web', 'programming' ]
 ---
 
