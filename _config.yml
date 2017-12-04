@@ -2,7 +2,7 @@
 title: 大黄的技术博客
 subtitle: 编程与游戏
 welcome_message: 如果有的选，那就选做自己喜欢的事情。
-description: 黄恩岩，港漂，程序员，桌游爱好者
+description: 黄恩岩，港漂，程序员，桌游爱好者
 creator: <a href="https://github.com/huangenyan">黄恩岩</a>
 
 url: "https://huangenyan.github.io"
@@ -27,8 +27,7 @@ nav:
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
-gems: [jekyll-paginate]
-paginate: 10
+paginate: 5
 paginate_path: "page/:num/"
 
 # Comment
